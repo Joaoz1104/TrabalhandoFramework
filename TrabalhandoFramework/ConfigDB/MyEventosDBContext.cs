@@ -10,7 +10,7 @@ namespace TrabalhandoFramework.ConfigDB
 {
     class MyEventosDBContext: DbContext
     {
-        DbSet<Evento> Eventos { get; set; }
-        DbSet<Status> Statuses { get; set; }
+        public DbSet<Evento> Eventos { get; set; }
+        public DbSet<Status> Statuses { get; set; }
     }
 }

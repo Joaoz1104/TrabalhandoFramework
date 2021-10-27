@@ -21,9 +21,11 @@ namespace TrabalhandoFramework
             InitializeComponent();
             contex = new MyEventosDBContext();
 
-            var status = contex.Statuses.ToString();
 
-            foreach (Status s in status)
+            var statuses = contex.Statuses.ToList();
+
+
+            foreach (Status s in statuses)
             {
                 comboBox1.Items.Add(s);
             }
@@ -36,7 +38,9 @@ namespace TrabalhandoFramework
         {
             BindingSource bi = new BindingSource();
 
+
             var query = from e in contex.Eventos
+
                         orderby e.Data descending
                         select new { e.Id, e.Nome, e.Data, e.status };
             bi.DataSource = query.ToList();
@@ -56,7 +60,9 @@ namespace TrabalhandoFramework
                     StatusId = (comboBox1.SelectedItem as Status).Id
                 };
 
+
                 contex.Eventos.Add(evento);
+
                 contex.SaveChanges();
 
                 RefreshGrid();
