@@ -14,6 +14,6 @@ namespace TrabalhandoFramework.Model
 
         public int StatusId { get; set; }
 
-        public Status status { get; set; }
+        public Status Situacao { get; set; }
     }
 }

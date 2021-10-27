@@ -42,7 +42,7 @@ namespace TrabalhandoFramework
             var query = from e in contex.Eventos
 
                         orderby e.Data descending
-                        select new { e.Id, e.Nome, e.Data, e.status };
+                        select new { e.Id, e.Nome, e.Data, e.Situacao };
             bi.DataSource = query.ToList();
 
             dataGridView1.DataSource = bi;

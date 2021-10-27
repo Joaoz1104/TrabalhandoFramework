@@ -31,7 +31,7 @@ namespace TrabalhandoFramework
 
             var query = from e in contex.Eventos
                         orderby e.Id
-                        select new { e.Id, e.status };
+                        select new { e.Id, e.Situacao };
 
             bi.DataSource = query.ToList();
 
