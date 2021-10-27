@@ -41,6 +41,7 @@ namespace TrabalhandoFramework
             this.txtNome = new System.Windows.Forms.TextBox();
             this.labelEvento = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnMod = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +51,7 @@ namespace TrabalhandoFramework
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.btnMod);
             this.groupBox1.Controls.Add(this.btnCancelar);
             this.groupBox1.Controls.Add(this.btnExcluir);
             this.groupBox1.Controls.Add(this.btnEditar);
@@ -76,6 +78,7 @@ namespace TrabalhandoFramework
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnExcluir
             // 
@@ -85,6 +88,7 @@ namespace TrabalhandoFramework
             this.btnExcluir.TabIndex = 8;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnEditar
             // 
@@ -94,6 +98,7 @@ namespace TrabalhandoFramework
             this.btnEditar.TabIndex = 7;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnCriar
             // 
@@ -116,7 +121,7 @@ namespace TrabalhandoFramework
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(280, 24);
             this.comboBox1.TabIndex = 5;
-            this.comboBox1.Text = "Selecione...";
+            this.comboBox1.Text = "Selecionar...";
             // 
             // labelStatus
             // 
@@ -175,6 +180,16 @@ namespace TrabalhandoFramework
             this.dataGridView1.Size = new System.Drawing.Size(776, 223);
             this.dataGridView1.TabIndex = 1;
             // 
+            // btnMod
+            // 
+            this.btnMod.Location = new System.Drawing.Point(461, 97);
+            this.btnMod.Name = "btnMod";
+            this.btnMod.Size = new System.Drawing.Size(248, 23);
+            this.btnMod.TabIndex = 10;
+            this.btnMod.Text = "Modificar Status";
+            this.btnMod.UseVisualStyleBackColor = true;
+            this.btnMod.Click += new System.EventHandler(this.btnMod_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,6 +221,7 @@ namespace TrabalhandoFramework
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnCriar;
+        private System.Windows.Forms.Button btnMod;
     }
 }
 
