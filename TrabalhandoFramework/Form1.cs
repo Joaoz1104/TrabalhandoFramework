@@ -53,7 +53,7 @@ namespace TrabalhandoFramework
         {
             if (comboBox1.SelectedItem != null && txtNome.Text != string.Empty)
             {
-                var evento = new Evento()
+                var eventos = new Evento()
                 {
                     Nome = txtNome.Text,
                     Data = dateTimePicker1.Value,
@@ -61,7 +61,7 @@ namespace TrabalhandoFramework
                 };
 
 
-                contex.Eventos.Add(evento);
+                contex.Eventos.Add(eventos);
 
                 contex.SaveChanges();
 

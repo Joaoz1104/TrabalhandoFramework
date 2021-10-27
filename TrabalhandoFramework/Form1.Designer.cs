@@ -108,6 +108,10 @@ namespace TrabalhandoFramework
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Em Concluido",
+            "A Fazer",
+            "Em Andamento"});
             this.comboBox1.Location = new System.Drawing.Point(121, 93);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(280, 24);
