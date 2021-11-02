@@ -30,6 +30,7 @@ namespace TrabalhandoFramework
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnMod = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@ namespace TrabalhandoFramework
             this.txtNome = new System.Windows.Forms.TextBox();
             this.labelEvento = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnMod = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -69,6 +69,16 @@ namespace TrabalhandoFramework
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Eventos";
+            // 
+            // btnMod
+            // 
+            this.btnMod.Location = new System.Drawing.Point(461, 97);
+            this.btnMod.Name = "btnMod";
+            this.btnMod.Size = new System.Drawing.Size(248, 23);
+            this.btnMod.TabIndex = 10;
+            this.btnMod.Text = "Modificar Status";
+            this.btnMod.UseVisualStyleBackColor = true;
+            this.btnMod.Click += new System.EventHandler(this.btnMod_Click);
             // 
             // btnCancelar
             // 
@@ -114,9 +124,9 @@ namespace TrabalhandoFramework
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Em Concluido",
             "A Fazer",
-            "Em Andamento"});
+            "Em Andamento",
+            "Em Concluido"});
             this.comboBox1.Location = new System.Drawing.Point(121, 93);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(280, 24);
@@ -137,7 +147,7 @@ namespace TrabalhandoFramework
             // 
             this.dateTimePicker1.CustomFormat = "";
             this.dateTimePicker1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dateTimePicker1.Location = new System.Drawing.Point(556, 32);
+            this.dateTimePicker1.Location = new System.Drawing.Point(556, 42);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(214, 22);
             this.dateTimePicker1.TabIndex = 3;
@@ -179,16 +189,6 @@ namespace TrabalhandoFramework
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(776, 223);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // btnMod
-            // 
-            this.btnMod.Location = new System.Drawing.Point(461, 97);
-            this.btnMod.Name = "btnMod";
-            this.btnMod.Size = new System.Drawing.Size(248, 23);
-            this.btnMod.TabIndex = 10;
-            this.btnMod.Text = "Modificar Status";
-            this.btnMod.UseVisualStyleBackColor = true;
-            this.btnMod.Click += new System.EventHandler(this.btnMod_Click);
             // 
             // Form1
             // 
