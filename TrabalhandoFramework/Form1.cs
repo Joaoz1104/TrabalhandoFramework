@@ -21,9 +21,7 @@ namespace TrabalhandoFramework
             InitializeComponent();
             contex = new MyEventosDBContext();
 
-
             var statuses = contex.Statuses.ToList();
-
 
             foreach (Status s in statuses)
             {
@@ -37,7 +35,6 @@ namespace TrabalhandoFramework
         private void RefreshGrid()
         {
             BindingSource bi = new BindingSource();
-
 
             var query = from e in contex.Eventos
 
